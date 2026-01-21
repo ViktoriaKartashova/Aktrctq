@@ -1,0 +1,283 @@
+
+79500@Ekaterina MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TM.blf
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PCManger/
+ Pictures/
+ PrintHood@
+ Recent@
+ Searches/
+ SendTo@
+ Videos/
+'WPS Cloud Files'/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ source/
+'Мои документы'@
+ Шаблоны@
+'главное меню'@
+
+79500@Ekaterina MINGW64 ~
+$ cd /d/tmp/
+
+79500@Ekaterina MINGW64 /d/tmp
+$ pwd
+/d/tmp
+
+79500@Ekaterina MINGW64 /d/tmp
+$ git config --global user.name "Комогорцева Екатерина"
+
+79500@Ekaterina MINGW64 /d/tmp
+$ git config --global user.email "teacollection01@gmail.com"
+
+79500@Ekaterina MINGW64 /d/tmp
+$ git init
+Initialized empty Git repository in D:/tmp/.git/
+
+79500@Ekaterina MINGW64 /d/tmp (master)
+$ ls -a
+./  ../  .git/
+
+79500@Ekaterina MINGW64 /d/tmp (master)
+$ cd /d/GitRepo/tmp/
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ ls -a
+./  ../  .git/
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git stgit status
+bash: $'\302\203\302\226\302\226\302\226\302\226\302\226git': command not found
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ ls -a
+./  ../  .git/
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git add README.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git commit -m "Добавлен файл README"
+[master (root-commit) 19eb8aa] Добавлен файл README
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git add README.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git commit -m "Добавлен файл README yes"
+[master 7fdcb31] Добавлен файл README yes
+ 1 file changed, 1 insertion(+)
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git log
+commit 7fdcb310740c6b1c8a1c1d08e845bd81cd032302 (HEAD -> master)
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:58:24 2026 +0800
+
+    Добавлен файл README yes
+
+commit 19eb8aa3cd08bb4c3044c06cf5339aad13494d13
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:53:52 2026 +0800
+
+    Добавлен файл README
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git log
+commit 7fdcb310740c6b1c8a1c1d08e845bd81cd032302 (HEAD -> master)
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:58:24 2026 +0800
+
+    Добавлен файл README yes
+
+commit 19eb8aa3cd08bb4c3044c06cf5339aad13494d13
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:53:52 2026 +0800
+
+    Добавлен файл README
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git add README.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git add test.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+        new file:   test.txt
+
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git commit -m "Добавлен файл README and test"
+[master bc4f83f] Добавлен файл README and test
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git log
+commit bc4f83fd7194c264ad42b305bf0ad9e614f44bc9 (HEAD -> master)
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 11:02:13 2026 +0800
+
+    Добавлен файл README and test
+
+commit 7fdcb310740c6b1c8a1c1d08e845bd81cd032302
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:58:24 2026 +0800
+
+    Добавлен файл README yes
+
+commit 19eb8aa3cd08bb4c3044c06cf5339aad13494d13
+Author: Комогорцева Екатерина <teacollection01@gmail.com>
+Date:   Wed Jan 21 10:53:52 2026 +0800
+
+    Добавлен файл README
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ git clone https://github.com/ViktoriaKartashova/Aktrctq.git test
+Cloning into 'test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp (master)
+$ cd /d/GitRepo/tmp/test/
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ git remote -v
+origin  https://github.com/ViktoriaKartashova/Aktrctq.git (fetch)
+origin  https://github.com/ViktoriaKartashova/Aktrctq.git (push)
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ git add hello.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ git commit -m "Добавлен файл hello"
+[main 420fc38] Добавлен файл hello
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ViktoriaKartashova/Aktrctq.git
+   3e5f323..420fc38  main -> main
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$ ^C
+
+79500@Ekaterina MINGW64 /d/GitRepo/tmp/test (main)
+$
